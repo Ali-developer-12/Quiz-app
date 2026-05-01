@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Playing</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Quiz playing interface">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="quiz-title">Quiz Chapter</h1>
+            <p id="progress-text">Question 1/X</p>
+        </header>
+
+        <main id="quiz-container">
+            <div id="question-text" class="question">Loading question...</div>
+            <div id="options-container" class="options-grid">
+            </div>
+            
+            <div class="action-buttons">
+                <button id="next-btn" style="display: none;" onclick="nextQuestion()">Next</button>
+                <button id="submit-btn" style="display: none;" onclick="submitQuiz()">Submit Quiz</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = startQuiz;
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Simple Quiz Application Home Page">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Quiz App</h1>
+            <p>Select a chapter to start your quiz!</p>
+        </header>
+
+        <main id="chapters-container" class="chapters-grid">
+            <p>Loading chapters...</p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = loadChapters;
+    </script>
+</body>
+</html>

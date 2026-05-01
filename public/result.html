@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App - Results</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Quiz Results page">
+</head>
+<body>
+    <div class="container result-page">
+        <header>
+            <h1>Quiz Results</h1>
+        </header>
+
+        <main id="result-container" class="result-card">
+            <h2 id="score-text">Calculating score...</h2>
+            <div class="stats">
+                <p>Total Questions: <span id="total-questions">-</span></p>
+                <p>Correct Answers: <span id="correct-answers">-</span></p>
+                <p>Score: <span id="score-percentage">-</span>%</p>
+            </div>
+            
+            <button onclick="window.location.href='index.html'" class="btn-primary mt-4">Retry / Go Home</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = showResult;
+    </script>
+</body>
+</html>
